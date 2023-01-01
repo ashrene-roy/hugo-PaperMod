@@ -119,6 +119,8 @@
 <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
 {{ end -}}
 
+{{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
+
 <noscript>
     <style>
         #theme-toggle,
